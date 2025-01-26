@@ -6,6 +6,10 @@ GameObject::GameObject(const glm::vec3 &position, const glm::vec3 &rotation, con
     GameObject::updateTransform();
 }
 
+GLvoid GameObject::setModel(const glm::mat4 &model) {
+    this->model = model;
+}
+
 GLvoid GameObject::setPosition(const glm::vec3 &position) {
     this->position = position;
     updateTransform();

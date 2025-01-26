@@ -22,6 +22,7 @@ public:
         const glm::vec3 &rotation = DEFAULT_ROTATION,
         const glm::vec3 &scale = DEFAULT_SCALE);
     virtual ~GameObject() = default;
+    GLvoid setModel(const glm::mat4 &model);
     GLvoid setPosition(const glm::vec3 &position);
     GLvoid setRotation(const glm::vec3 &rotation);
     GLvoid setScale(const glm::vec3 &scale);

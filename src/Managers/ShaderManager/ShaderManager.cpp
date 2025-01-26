@@ -12,7 +12,7 @@ ShaderManager::~ShaderManager() {
 }
 
 GLvoid ShaderManager::loadShaders() {
-    // colorShader = new Shader(COLOR_VERT_SHADER, COLOR_FRAG_SHADER);
+    colorShader = new Shader(COLOR_VERT_SHADER, COLOR_FRAG_SHADER);
     textureShader = new Shader(TEXTURE_VERT_SHADER, TEXTURE_FRAG_SHADER);
 }
 

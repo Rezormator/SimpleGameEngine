@@ -7,7 +7,7 @@
 
 class ResourceManager {
 private:
-    static constexpr auto DEFAULT_TEXTURE = "../resources/textures/default.png";
+    static constexpr auto DEFAULT_TEXTURE = "../resources/textures/default.jpg";
     Texture *defaultTexture;
     ColorMaterial *defaultMaterial;
     GLvoid loadResources(Shader *shader);

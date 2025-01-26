@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(INCLUDES_DIR ${CMAKE_SOURCE_DIR}/dependency/include/)
 set(LIBS_DIR ${CMAKE_SOURCE_DIR}/dependency/lib/)
 
-add_library(GLAD ${INCLUDES_DIR}glad/glad.c)
+add_library(GLAD ${INCLUDES_DIR}glad/glad.c
+        src/Game/GameObject/Model/Model.cpp
+        src/Game/GameObject/Model/Model.h)
 add_library(STB_IMAGE ${INCLUDES_DIR}stb/stb_image.cpp)
 
 set(LIBS GLAD STB_IMAGE glfw3 assimp)
@@ -49,6 +51,10 @@ add_executable(SimpleGameEngine
         src/Game/Material/TextureMaterial/TextureMaterial.cpp
         src/Game/Material/TextureMaterial/TextureMaterial.h
         src/Game/Material/ColorMaterial/ColorMaterial.cpp
-        src/Game/Material/ColorMaterial/ColorMaterial.h)
+        src/Game/Material/ColorMaterial/ColorMaterial.h
+        src/Game/GameObject/Model/Mesh/Mesh.cpp
+        src/Game/GameObject/Model/Mesh/Mesh.h
+        src/Game/GameObject/Model/Vertex/Vertex.cpp
+        src/Game/GameObject/Model/Vertex/Vertex.h)
 
 target_link_libraries(SimpleGameEngine ${LIBS})

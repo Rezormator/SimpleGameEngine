@@ -1,12 +1,17 @@
 #include "Scene.h"
+
+#include <iostream>
+#include <ostream>
+
 #include "../../Managers/Managers.h"
+#include "../GameObject/Model/Model.h"
 
 Scene::Scene() {
     camera = new Camera();
     camera->setPosition({0, 0, 0});
     createObjects();
     createLights();
-    // model = new Model("../models/room/room.obj");
+    model = new Model("../resources/models/backpack/backpack.obj");
     // model->setScale({0.005f, 0.005, 0.005});
 }
 
@@ -30,7 +35,11 @@ GLvoid Scene::draw() {
     const auto shader = Managers::getShaderManager()->getTextureShader();
 
     camera->update();
-    camera->set(shader);
+    camera->set(Managers::getShaderManager()->getColorShader());
+    camera->set(Managers::getShaderManager()->getTextureShader());
+    model->render();
+
+    std::cout << camera->getPosition().x << " " << camera->getPosition().y << std::endl;
 
     // spotLights["2"]->setPosition(camera->getPosition());
     // spotLights["2"]->setDirection(camera->getFront());
