@@ -111,7 +111,7 @@ build libSTB_IMAGE.a: CXX_STATIC_LIBRARY_LINKER__STB_IMAGE_Debug CMakeFiles/STB_
 #############################################
 # Order-only phony target for SimpleGameEngine
 
-build cmake_object_order_depends_target_SimpleGameEngine: phony || .
+build cmake_object_order_depends_target_SimpleGameEngine: phony || cmake_object_order_depends_target_GLAD cmake_object_order_depends_target_STB_IMAGE
 
 build CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/main.cpp || cmake_object_order_depends_target_SimpleGameEngine
   DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\main.cpp.obj.d
@@ -119,6 +119,97 @@ build CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj: CXX_COMPILER__SimpleGame
   INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
   OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src
+
+build CMakeFiles/SimpleGameEngine.dir/src/Application/Application.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Application/Application.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Application\Application.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Application
+
+build CMakeFiles/SimpleGameEngine.dir/src/Error/Error.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Error/Error.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Error\Error.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Error
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Game.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Game.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Game.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/GameObject.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/GameObject/GameObject.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\GameObject\GameObject.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\GameObject
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/Camera/Camera.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/GameObject/Camera/Camera.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\GameObject\Camera\Camera.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\GameObject\Camera
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Shader/Shader.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Shader/Shader.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Shader\Shader.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Shader
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Screen/Screen.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Screen/Screen.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Screen\Screen.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Screen
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Time/Time.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Time/Time.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Time\Time.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Time
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Input/Input.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Input/Input.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Input\Input.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Input
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Scene/Scene.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Scene/Scene.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Scene\Scene.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Scene
+
+build CMakeFiles/SimpleGameEngine.dir/src/Managers/Managers.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Managers/Managers.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Managers\Managers.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Managers
+
+build CMakeFiles/SimpleGameEngine.dir/src/Managers/ShaderManager/ShaderManager.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Managers/ShaderManager/ShaderManager.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Managers\ShaderManager\ShaderManager.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Managers\ShaderManager
+
+build CMakeFiles/SimpleGameEngine.dir/src/Managers/ResourceManager/ResourceManager.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Managers/ResourceManager/ResourceManager.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Managers\ResourceManager\ResourceManager.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Managers\ResourceManager
 
 
 # =============================================================================
@@ -128,9 +219,9 @@ build CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj: CXX_COMPILER__SimpleGame
 #############################################
 # Link the executable SimpleGameEngine.exe
 
-build SimpleGameEngine.exe: CXX_EXECUTABLE_LINKER__SimpleGameEngine_Debug CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj
+build SimpleGameEngine.exe: CXX_EXECUTABLE_LINKER__SimpleGameEngine_Debug CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Application/Application.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Error/Error.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Game.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/GameObject.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/Camera/Camera.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Shader/Shader.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Screen/Screen.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Time/Time.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Input/Input.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Scene/Scene.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/Managers.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/ShaderManager/ShaderManager.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/ResourceManager/ResourceManager.cpp.obj | libGLAD.a libSTB_IMAGE.a || libGLAD.a libSTB_IMAGE.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libGLAD.a  libSTB_IMAGE.a  -lglfw3  -lassimp  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/Projects/OpenGL/SimpleGameEngine/dependency/lib
   OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
   POST_BUILD = cd .
