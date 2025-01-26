@@ -41,6 +41,14 @@ add_executable(SimpleGameEngine
         src/Managers/ShaderManager/ShaderManager.cpp
         src/Managers/ShaderManager/ShaderManager.h
         src/Managers/ResourceManager/ResourceManager.cpp
-        src/Managers/ResourceManager/ResourceManager.h)
+        src/Managers/ResourceManager/ResourceManager.h
+        src/Game/Material/Material.cpp
+        src/Game/Material/Material.h
+        src/Game/Texture/Texture.cpp
+        src/Game/Texture/Texture.h
+        src/Game/Material/TextureMaterial/TextureMaterial.cpp
+        src/Game/Material/TextureMaterial/TextureMaterial.h
+        src/Game/Material/ColorMaterial/ColorMaterial.cpp
+        src/Game/Material/ColorMaterial/ColorMaterial.h)
 
 target_link_libraries(SimpleGameEngine ${LIBS})

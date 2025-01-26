@@ -211,6 +211,34 @@ build CMakeFiles/SimpleGameEngine.dir/src/Managers/ResourceManager/ResourceManag
   OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Managers\ResourceManager
 
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Material/Material.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Material/Material.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Material\Material.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Material
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Texture/Texture.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Texture/Texture.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Texture\Texture.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Texture
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Material/TextureMaterial/TextureMaterial.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Material/TextureMaterial/TextureMaterial.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Material\TextureMaterial\TextureMaterial.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Material\TextureMaterial
+
+build CMakeFiles/SimpleGameEngine.dir/src/Game/Material/ColorMaterial/ColorMaterial.cpp.obj: CXX_COMPILER__SimpleGameEngine_unscanned_Debug D$:/Projects/OpenGL/SimpleGameEngine/src/Game/Material/ColorMaterial/ColorMaterial.cpp || cmake_object_order_depends_target_SimpleGameEngine
+  DEP_FILE = CMakeFiles\SimpleGameEngine.dir\src\Game\Material\ColorMaterial\ColorMaterial.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/Projects/OpenGL/SimpleGameEngine/dependency/include
+  OBJECT_DIR = CMakeFiles\SimpleGameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGameEngine.dir\src\Game\Material\ColorMaterial
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SimpleGameEngine
@@ -219,7 +247,7 @@ build CMakeFiles/SimpleGameEngine.dir/src/Managers/ResourceManager/ResourceManag
 #############################################
 # Link the executable SimpleGameEngine.exe
 
-build SimpleGameEngine.exe: CXX_EXECUTABLE_LINKER__SimpleGameEngine_Debug CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Application/Application.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Error/Error.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Game.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/GameObject.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/Camera/Camera.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Shader/Shader.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Screen/Screen.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Time/Time.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Input/Input.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Scene/Scene.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/Managers.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/ShaderManager/ShaderManager.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/ResourceManager/ResourceManager.cpp.obj | libGLAD.a libSTB_IMAGE.a || libGLAD.a libSTB_IMAGE.a
+build SimpleGameEngine.exe: CXX_EXECUTABLE_LINKER__SimpleGameEngine_Debug CMakeFiles/SimpleGameEngine.dir/src/main.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Application/Application.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Error/Error.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Game.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/GameObject.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/GameObject/Camera/Camera.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Shader/Shader.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Screen/Screen.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Time/Time.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Input/Input.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Scene/Scene.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/Managers.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/ShaderManager/ShaderManager.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Managers/ResourceManager/ResourceManager.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Material/Material.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Texture/Texture.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Material/TextureMaterial/TextureMaterial.cpp.obj CMakeFiles/SimpleGameEngine.dir/src/Game/Material/ColorMaterial/ColorMaterial.cpp.obj | libGLAD.a libSTB_IMAGE.a || libGLAD.a libSTB_IMAGE.a
   FLAGS = -g
   LINK_LIBRARIES = libGLAD.a  libSTB_IMAGE.a  -lglfw3  -lassimp  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/Projects/OpenGL/SimpleGameEngine/dependency/lib

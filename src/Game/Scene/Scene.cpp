@@ -4,8 +4,6 @@
 Scene::Scene() {
     camera = new Camera();
     camera->setPosition({0, 0, 0});
-    Managers::getShaderManager()->loadShaders();
-    Managers::getResourceManager()->loadResources();
     createObjects();
     createLights();
     // model = new Model("../models/room/room.obj");

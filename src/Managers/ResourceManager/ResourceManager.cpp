@@ -1,14 +1,24 @@
 #include "ResourceManager.h"
 #include "../../Error/Error.h"
 
-ResourceManager::ResourceManager() = default;
-
-ResourceManager::~ResourceManager() {
-
+ResourceManager::ResourceManager(Shader *shader) {
+    loadResources(shader);
 }
 
-GLvoid ResourceManager::loadResources() {
-    // textures["black"] = new Texture2D(TEXTURE_BLACK);
-    // textures["container"] = new Texture2D(TEXTURE_CONTAINER);
-    // textures["container-specular"] = new Texture2D(TEXTURE_CONTAINER_SPECULAR);
+ResourceManager::~ResourceManager() {
+    delete defaultTexture;
+    delete defaultMaterial;
+}
+
+GLvoid ResourceManager::loadResources(Shader *shader) {
+    defaultTexture = new Texture(DEFAULT_TEXTURE);
+    defaultMaterial = new ColorMaterial(shader);
+}
+
+Texture *ResourceManager::getDefaultTexture() const {
+    return defaultTexture;
+}
+
+ColorMaterial *ResourceManager::getDefaultMaterial() const {
+    return defaultMaterial;
 }

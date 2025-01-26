@@ -1,16 +1,19 @@
 #pragma once
 
 #include <glad/glad.h>
-// #include "../../Game/Texture2D/Texture2D.h"
+#include "../../Game/Texture/Texture.h"
+#include "../../Game/Material/ColorMaterial/ColorMaterial.h"
 #include "../../utils/utils.h"
 
 class ResourceManager {
 private:
-    static constexpr auto DEFAULT_TEXTURE = "../resources/textures/white.png";
+    static constexpr auto DEFAULT_TEXTURE = "../resources/textures/default.png";
+    Texture *defaultTexture;
+    ColorMaterial *defaultMaterial;
+    GLvoid loadResources(Shader *shader);
 public:
-    ResourceManager();
+    explicit ResourceManager(Shader *shader);
     ~ResourceManager();
-    GLvoid loadResources();
-    // NODISCARD Texture2D *getDefaultTexture();
-    // NODISCARD ColorMaterial
+    NODISCARD Texture *getDefaultTexture() const;
+    NODISCARD ColorMaterial *getDefaultMaterial() const;
 };

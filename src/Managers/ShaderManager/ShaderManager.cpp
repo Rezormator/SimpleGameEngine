@@ -2,7 +2,9 @@
 #include <ranges>
 #include "../../Error/Error.h"
 
-ShaderManager::ShaderManager() = default;
+ShaderManager::ShaderManager() {
+    loadShaders();
+}
 
 ShaderManager::~ShaderManager() {
     delete colorShader;

@@ -10,10 +10,10 @@ class ShaderManager {
     static constexpr auto TEXTURE_FRAG_SHADER = "../resources/shaders/textureShader.frag";
     Shader *colorShader;
     Shader *textureShader;
+    GLvoid loadShaders();
 public:
     ShaderManager();
     ~ShaderManager();
-    GLvoid loadShaders();
     NODISCARD Shader *getColorShader() const;
     NODISCARD Shader *getTextureShader() const;
 };

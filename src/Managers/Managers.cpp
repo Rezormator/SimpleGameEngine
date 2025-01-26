@@ -5,7 +5,7 @@ ResourceManager * Managers::resourceManager;
 
 GLvoid Managers::initializeManagers() {
     shaderManager = new ShaderManager();
-    resourceManager = new ResourceManager();
+    resourceManager = new ResourceManager(shaderManager->getColorShader());
 }
 
 ShaderManager *Managers::getShaderManager() {
