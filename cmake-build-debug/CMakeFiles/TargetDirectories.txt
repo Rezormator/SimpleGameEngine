@@ -1,0 +1,5 @@
+D:/Projects/OpenGL/SimpleGameEngine/cmake-build-debug/CMakeFiles/GLAD.dir
+D:/Projects/OpenGL/SimpleGameEngine/cmake-build-debug/CMakeFiles/STB_IMAGE.dir
+D:/Projects/OpenGL/SimpleGameEngine/cmake-build-debug/CMakeFiles/SimpleGameEngine.dir
+D:/Projects/OpenGL/SimpleGameEngine/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/OpenGL/SimpleGameEngine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
