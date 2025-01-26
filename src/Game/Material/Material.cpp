@@ -12,6 +12,10 @@ GLvoid Material::setEmission(const glm::vec3 &emission) {
     this->emission = emission;
 }
 
+Shader *Material::getShader() const {
+    return shader;
+}
+
 GLvoid Material::apply() {
     shader->use();
     shader->setFloat("material.shininess", shininess);

@@ -71,13 +71,13 @@ void main() {
 //        result += calculateDirLight(directionalLights[i], norm, viewDir);
 //    }
 //
-//    for (int i = 0; i < POINT_LIGHTS_COUNT; i++) {
-//        result += calculatePointLight(pointLights[i], norm, viewDir, FragPos);
-//    }
+    for (int i = 0; i < POINT_LIGHTS_COUNT; i++) {
+        result += calculatePointLight(pointLights[i], norm, viewDir, FragPos);
+    }
 
-//    for (int i = 0; i < SPOT_LIGHTS_COUNT; i++) {
-//        result += calculateSpotLight(spotLights[i], norm, viewDir, FragPos);
-//    }
+    for (int i = 0; i < SPOT_LIGHTS_COUNT; i++) {
+        result += calculateSpotLight(spotLights[i], norm, viewDir, FragPos);
+    }
 
     result += material.emission;
     FragColor = vec4(result, 1.0);

@@ -14,5 +14,6 @@ public:
     virtual ~Material() = default;
     GLvoid setShininess(GLfloat shininess);
     GLvoid setEmission(const glm::vec3 &emission);
+    Shader *getShader() const;
     virtual GLvoid apply();
 };

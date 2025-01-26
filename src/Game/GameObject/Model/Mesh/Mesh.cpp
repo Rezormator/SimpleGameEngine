@@ -55,6 +55,7 @@ GLvoid Mesh::setupMesh() {
 
 GLvoid Mesh::render() const {
     material->apply();
+    material->getShader()->setMat4("model", model);
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, nullptr);
     glBindVertexArray(0);

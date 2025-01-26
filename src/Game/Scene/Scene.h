@@ -11,12 +11,14 @@ class Scene {
 private:
     Camera *camera;
     std::map<std::string, Model*> models;
-    std::map<std::string, Light*> lights;
+    std::map<std::string, DirectionalLight*> directionalLights;
+    std::map<std::string, PointLight*> pointLights;
+    std::map<std::string, SpotLight*> spotLights;
     GLvoid createObjects();
     GLvoid createLights();
     GLvoid setLights(Shader *shader) const;
 public:
     Scene();
     ~Scene();
-    GLvoid draw();
+    GLvoid render();
 };

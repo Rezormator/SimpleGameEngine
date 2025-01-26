@@ -59,7 +59,7 @@ GLvoid Game::run() const {
         Screen::clear();
         Time::update();
 
-        scene->draw();
+        scene->render();
 
         glfwSwapBuffers(window);
         glfwPollEvents();

@@ -7,6 +7,7 @@
 #include "../../../Managers/Managers.h"
 #include "../../../Error/Error.h"
 #include "../../Material/TextureMaterial/TextureMaterial.h"
+#include <stb/stb_image.h>
 
 Model::Model(const char *path) {
     loadModel(path);
@@ -62,6 +63,7 @@ GLvoid Model::loadMaterials(const aiScene *scene) {
 }
 
 Texture *Model::loadMaterialTextures(const aiMaterial *mat, const aiTextureType type, const std::string &directory) {
+    stbi_set_flip_vertically_on_load(true);
     aiString texName;
     mat->GetTexture(type, 0, &texName);
     const auto texPath = directory + "/" + texName.C_Str();
@@ -81,9 +83,9 @@ GLvoid Model::processNode(const aiNode *node, const aiScene *scene) {
 
 GLvoid Model::updateTransform() {
     GameObject::updateTransform();
-    // for (const auto& mesh : meshes) {
-    //     mesh->setModel(model);
-    // }
+    for (const auto& mesh : meshes) {
+        mesh->setModel(model);
+    }
 }
 
 GLvoid Model::render() const {
