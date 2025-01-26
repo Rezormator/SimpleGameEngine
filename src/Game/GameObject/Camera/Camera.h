@@ -8,7 +8,7 @@ class Camera final : public GameObject {
     static constexpr GLfloat DEFAULT_FOV = 45.0f;
     static constexpr GLfloat DEFAULT_NEAR_CLIP = 0.1f;
     static constexpr GLfloat DEFAULT_FAR_CLIP = 100.0f;
-    static constexpr GLdouble MOVEMENT_SPEED = 1.0;
+    static constexpr GLfloat MOVEMENT_SPEED = 1.0f;
     static constexpr GLfloat SENSITIVITY = 0.001f;
     glm::vec3 front;
     glm::vec3 up;

@@ -5,7 +5,7 @@
 #include "../../Input/Input.h"
 #include "../../Time/Time.h"
 
-Camera::Camera(const GLfloat fov, const glm::vec3 &position, const glm::vec3 &rotation, GLfloat movementSpead)
+Camera::Camera(const GLfloat fov, const glm::vec3 &position, const glm::vec3 &rotation, const GLfloat movementSpeed)
     : GameObject(position, rotation), front(0.0f, 0.0f, -1.0f), up(WORLD_UP), worldUp(WORLD_UP), fov(0.0),
     view(1.0f), projection(1.0f), movementSpeed(movementSpeed) {
     setFov(fov);

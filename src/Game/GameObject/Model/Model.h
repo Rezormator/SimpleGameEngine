@@ -12,7 +12,7 @@
 class Model final : public GameObject {
 private:
     std::vector<Mesh *> meshes;
-    std::map<GLint, Material *> materials;
+    std::map<GLuint, Material *> materials;
     std::string directory;
     GLvoid loadModel(const std::string &path);
     GLvoid loadMaterials(const aiScene *scene);

@@ -52,12 +52,12 @@ GLvoid Game::run() const {
     glEnable(GL_DEPTH_TEST);
 
     while (!glfwWindowShouldClose(window)) {
-        Screen::clear();
-        Time::update();
-
         if (Input::getKeyPress(GLFW_KEY_ESCAPE)) {
             glfwSetWindowShouldClose(window, GLFW_TRUE);
         }
+
+        Screen::clear();
+        Time::update();
 
         scene->draw();
 

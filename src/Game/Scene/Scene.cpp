@@ -1,55 +1,40 @@
 #include "Scene.h"
-
-#include <iostream>
-#include <ostream>
-
+#include <ranges>
 #include "../../Managers/Managers.h"
 #include "../GameObject/Model/Model.h"
 
 Scene::Scene() {
     camera = new Camera();
-    camera->setPosition({0, 0, 0});
     createObjects();
     createLights();
-    model = new Model("../resources/models/backpack/backpack.obj");
-    // model->setScale({0.005f, 0.005, 0.005});
 }
 
 Scene::~Scene() {
     delete camera;
-    // for (const auto &object: objects | std::views::values) {
-    //     delete object;
-    // }
-    // for (const auto &directionLight: directionLights | std::views::values) {
-    //     delete directionLight;
-    // }
-    // for (const auto &pointLight: pointLights | std::views::values) {
-    //     delete pointLight;
-    // }
-    // for (const auto &spotLight: spotLights | std::views::values) {
-    //     delete spotLight;
-    // }
+    for (const auto &model: models | std::views::values) {
+        delete model;
+    }
+    for (const auto &light: lights | std::views::values) {
+        delete light;
+    }
 }
 
 GLvoid Scene::draw() {
-    const auto shader = Managers::getShaderManager()->getTextureShader();
-
     camera->update();
     camera->set(Managers::getShaderManager()->getColorShader());
     camera->set(Managers::getShaderManager()->getTextureShader());
-    model->render();
 
-    std::cout << camera->getPosition().x << " " << camera->getPosition().y << std::endl;
+    setLights(Managers::getShaderManager()->getColorShader());
+    setLights(Managers::getShaderManager()->getTextureShader());
+
+    models["backpack"]->render();
 
     // spotLights["2"]->setPosition(camera->getPosition());
     // spotLights["2"]->setDirection(camera->getFront());
-
-    drawLights();
-
-    // model->render(shader);
 }
 
 GLvoid Scene::createObjects() {
+    models["backpack"] = new Model("../resources/models/backpack/backpack.obj");
     // objects["Cube"] = new Object(Manager::getShaderManager()->getShader("texture"),
     //     "../src/Game/Object/Objects/Cube",
     //     {3.0f, 3.0f, 3.0f});
@@ -59,27 +44,20 @@ GLvoid Scene::createObjects() {
 }
 
 GLvoid Scene::createLights() {
-    // pointLights["1"] = new PointLight();
-    // pointLights["1"]->setPosition({1.0f, 3.0f, 5.0f});
+    lights["point"] = new PointLight();
+    lights["point"]->setPosition({1.0f, 3.0f, 5.0f});
     // directionLights["1"] = new DirectionalLight();
-    // // spotLights["1"] = new SpotLight();
-    // // spotLights["1"]->setDirection({0.0f, 0.0f, 1.0f});
+    // spotLights["1"] = new SpotLight();
+    // spotLights["1"]->setDirection({0.0f, 0.0f, 1.0f});
     // spotLights["2"] = new SpotLight();
     // spotLights["2"]->setRadius(1000);
     // spotLights["2"]->setOuterCutOff(25.0);
     // spotLights["2"]->setInnerCutOff(22.0);
 }
 
-GLvoid Scene::drawLights() const {
-    // const auto shader = Manager::getShaderManager()->getShader("texture");
-    // for (const auto &directionLight: directionLights | std::views::values) {
-    //     directionLight->set(shader);
-    // }
-    // for (const auto &pointLight: pointLights | std::views::values) {
-    //     pointLight->set(shader);
-    // }
-    // for (const auto &spotLight: spotLights | std::views::values) {
-    //     spotLight->set(shader);
-    // }
+GLvoid Scene::setLights(Shader *shader) const {
+    for (const auto &light: lights | std::views::values) {
+        light->set(shader);
+    }
 }
 

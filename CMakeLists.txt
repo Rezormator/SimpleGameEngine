@@ -55,6 +55,14 @@ add_executable(SimpleGameEngine
         src/Game/GameObject/Model/Mesh/Mesh.cpp
         src/Game/GameObject/Model/Mesh/Mesh.h
         src/Game/GameObject/Model/Vertex/Vertex.cpp
-        src/Game/GameObject/Model/Vertex/Vertex.h)
+        src/Game/GameObject/Model/Vertex/Vertex.h
+        src/Game/Light/Light.cpp
+        src/Game/Light/Light.h
+        src/Game/Light/DirectionalLight/DirectionalLight.cpp
+        src/Game/Light/DirectionalLight/DirectionalLight.h
+        src/Game/Light/PointLight/PointLight.cpp
+        src/Game/Light/PointLight/PointLight.h
+        src/Game/Light/SpotLight/SpotLight.cpp
+        src/Game/Light/SpotLight/SpotLight.h)
 
 target_link_libraries(SimpleGameEngine ${LIBS})

@@ -81,9 +81,9 @@ GLvoid Model::processNode(const aiNode *node, const aiScene *scene) {
 
 GLvoid Model::updateTransform() {
     GameObject::updateTransform();
-    for (const auto& mesh : meshes) {
-        mesh->setModel(model);
-    }
+    // for (const auto& mesh : meshes) {
+    //     mesh->setModel(model);
+    // }
 }
 
 GLvoid Model::render() const {
